@@ -3,7 +3,7 @@ from distutils.core import setup
 import os
 
 if os.path.exists('README.rst'):
-    long_description = open('README.rst', encoding = 'UTF-8').read()
+    long_description = open('README.rst', 'r').read()
 else:
     long_description = 'See http://github.com/jwandborg/py-colorclassifier'
 
