@@ -18,7 +18,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import logging
 
-from colormath.color_objects import LabColor, RGBColor
+try:
+    from colormath.color_objects import LabColor, RGBColor
+except:
+    from colormath.color_objects import LabColor, sRGBColor as RGBColor
 
 logger = logging.getLogger(__name__)
 logging.basicConfig()
